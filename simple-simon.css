@@ -1,0 +1,68 @@
+* {
+    box-sizing: border-box;
+}
+
+body, html {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+
+
+div[class*="Left"], div[class*="Right"] {
+    border: 2px solid black;
+    flex-basis: 50%;
+}
+
+#simon {
+    width: 320px;
+    height: 320px;
+    background-color: #a5a5a5;
+}
+
+.wrapper {
+    height: 100vh;
+    width: 100vw;
+}
+
+.topLeft {
+    border-top-left-radius: 80px;
+}
+
+.bottomLeft {
+    border-bottom-left-radius: 80px;
+}
+
+.topRight {
+    border-top-right-radius: 80px;
+}
+
+.bottomRight {
+    border-bottom-right-radius: 80px;
+}
+
+@media screen and (min-width: 768px) {
+
+    #simon {
+        width: 500px;
+        height: 500px;
+    }
+
+    .topLeft {
+        border-top-left-radius: 175px;
+    }
+
+    .bottomLeft {
+        border-bottom-left-radius: 175px;
+    }
+
+    .topRight {
+        border-top-right-radius: 175px;
+    }
+
+    .bottomRight {
+        border-bottom-right-radius: 175px;
+    }
+
+}
